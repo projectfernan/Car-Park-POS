@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="ParkingPOS">
+</Property><Property Name="Solution File" Value="D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\ParkingPOS.sln">
+</Property><Property Name="Date" Value="Tuesday, October 15, 2013">
+</Property><Property Name="Time" Value="16:08:46 PM">
+</Property></Properties><Event ErrorLevel="4" Project="ParkingPOS" Source="http://go.microsoft.com/fwlink/?LinkId=159919" Description="Warning: this project requires Crystal Reports, which is no longer included with Visual Studio. Please click here for more information.">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="ParkingPOS.vbproj" Description="Project file successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\ParkingPOS.vbproj">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="ParkingPOS.vbproj.user" Description="Project user file successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\ParkingPOS.vbproj.user">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="ApplicationEvents.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\ApplicationEvents.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmAddCharging.Designer.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmAddCharging.Designer.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmAddCharging.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmAddCharging.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmAddDiscount.Designer.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmAddDiscount.Designer.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmAddDiscount.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmAddDiscount.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmBussDate.Designer.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmBussDate.Designer.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmBussDate.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmBussDate.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmCamSettings.Designer.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmCamSettings.Designer.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmCamSettings.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmCamSettings.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmChargeCateg.Designer.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmChargeCateg.Designer.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmChargeCateg.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmChargeCateg.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmCharging.Designer.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmCharging.Designer.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmCharging.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmCharging.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmCompute.Designer.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmCompute.Designer.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmCompute.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmCompute.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmD8Test.Designer.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmD8Test.Designer.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmD8Test.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmD8Test.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmDiscount.Designer.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmDiscount.Designer.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmDiscount.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmDiscount.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmFindLostCard.Designer.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmFindLostCard.Designer.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmFindLostCard.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmFindLostCard.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmFlatRate.Designer.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmFlatRate.Designer.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmFlatRate.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmFlatRate.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmGenCateg.Designer.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmGenCateg.Designer.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmGenCateg.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmGenCateg.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmHourly.Designer.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmHourly.Designer.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmHourly.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmHourly.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmLostCard.Designer.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmLostCard.Designer.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmLostCard.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmLostCard.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmOR.Designer.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmOR.Designer.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmOR.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmOR.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmOVcompute.Designer.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmOVcompute.Designer.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmOVcompute.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmOVcompute.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmOvernigth.Designer.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmOvernigth.Designer.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmOvernigth.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmOvernigth.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmPrevPrint.Designer.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmPrevPrint.Designer.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmPrevPrint.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmPrevPrint.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmTender.Designer.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmTender.Designer.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmTender.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmTender.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmTenderChange.Designer.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmTenderChange.Designer.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmTenderChange.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmTenderChange.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmTransact.Designer.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmTransact.Designer.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmTransact.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmTransact.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmAcc.Designer.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmAcc.Designer.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmAcc.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmAcc.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmAddAcc.Designer.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmAddAcc.Designer.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmAddAcc.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmAddAcc.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmConnDB.Designer.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmConnDB.Designer.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmConnDB.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmConnDB.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmLogin.Designer.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmLogin.Designer.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmLogin.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmLogin.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmPoleDisplay.Designer.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmPoleDisplay.Designer.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmPoleDisplay.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmPoleDisplay.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmSetPOS.Designer.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmSetPOS.Designer.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmSetPOS.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmSetPOS.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmSetPrinter.Designer.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmSetPrinter.Designer.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmSetPrinter.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmSetPrinter.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmMain.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmMain.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmMain.Designer.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmMain.Designer.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmBarrier.Designer.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmBarrier.Designer.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmBarrier.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmBarrier.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmReportDT.Designer.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmReportDT.Designer.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmReportDT.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmReportDT.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmSettings.Designer.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmSettings.Designer.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmSettings.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmSettings.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmSyncTime.Designer.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmSyncTime.Designer.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmSyncTime.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmSyncTime.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmSystem.Designer.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmSystem.Designer.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmSystem.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmSystem.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmTransactLost.Designer.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmTransactLost.Designer.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmTransactLost.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmTransactLost.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmVehicle.Designer.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmVehicle.Designer.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmVehicle.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmVehicle.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmLogo.Designer.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmLogo.Designer.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmLogo.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmLogo.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Modules\LOGO_FUNCTION.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Modules\LOGO_FUNCTION.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Modules\AddPic.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Modules\AddPic.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Modules\CamSettings.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Modules\CamSettings.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Modules\Charging Rules.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Modules\Charging Rules.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Modules\CHARGING_FUNCTION.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Modules\CHARGING_FUNCTION.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Modules\D8.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Modules\D8.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Modules\D8Offline.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Modules\D8Offline.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Modules\D8Write.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Modules\D8Write.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Modules\HEX to String.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Modules\HEX to String.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Modules\IO Relay.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Modules\IO Relay.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Modules\Controls.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Modules\Controls.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Modules\DBconn.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Modules\DBconn.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Modules\MainCtrl.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Modules\MainCtrl.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Modules\D8Online.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Modules\D8Online.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Modules\OR_NO_FUNCTION.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Modules\OR_NO_FUNCTION.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Modules\PingConfig.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Modules\PingConfig.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Modules\PoleDisplay.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Modules\PoleDisplay.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Modules\PrinterDriver.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Modules\PrinterDriver.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Modules\PrintReceipt.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Modules\PrintReceipt.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Modules\ReaderConn.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Modules\ReaderConn.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Modules\ServerTime.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Modules\ServerTime.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Modules\TimeComputation.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Modules\TimeComputation.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="My Project\AssemblyInfo.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\My Project\AssemblyInfo.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="My Project\Application.Designer.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\My Project\Application.Designer.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="My Project\Resources.Designer.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\My Project\Resources.Designer.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="My Project\Settings.Designer.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\My Project\Settings.Designer.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Reports\CRBydate.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Reports\CRBydate.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Reports\CRByOp.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Reports\CRByOp.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Reports\CRBySt.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Reports\CRBySt.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Reports\CRByVh.vb" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Reports\CRByVh.vb">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="app.config" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\app.config">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="My Project\Application.myapp" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\My Project\Application.myapp">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="My Project\Settings.settings" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\My Project\Settings.settings">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="parking.ico" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\parking.ico">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmAddCharging.resx" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmAddCharging.resx">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmAddDiscount.resx" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmAddDiscount.resx">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmBussDate.resx" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmBussDate.resx">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmCamSettings.resx" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmCamSettings.resx">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmChargeCateg.resx" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmChargeCateg.resx">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmCharging.resx" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmCharging.resx">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmCompute.resx" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmCompute.resx">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmD8Test.resx" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmD8Test.resx">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmDiscount.resx" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmDiscount.resx">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmFindLostCard.resx" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmFindLostCard.resx">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmFlatRate.resx" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmFlatRate.resx">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmGenCateg.resx" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmGenCateg.resx">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmHourly.resx" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmHourly.resx">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmLostCard.resx" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmLostCard.resx">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmOR.resx" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmOR.resx">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmOVcompute.resx" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmOVcompute.resx">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmOvernigth.resx" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmOvernigth.resx">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmPrevPrint.resx" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmPrevPrint.resx">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmTender.resx" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmTender.resx">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmTenderChange.resx" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmTenderChange.resx">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmTransact.resx" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmTransact.resx">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmAcc.resx" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmAcc.resx">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmAddAcc.resx" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmAddAcc.resx">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmConnDB.resx" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmConnDB.resx">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmLogin.resx" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmLogin.resx">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmPoleDisplay.resx" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmPoleDisplay.resx">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmSetPOS.resx" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmSetPOS.resx">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmSetPrinter.resx" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmSetPrinter.resx">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmMain.resx" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmMain.resx">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmBarrier.resx" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmBarrier.resx">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmReportDT.resx" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmReportDT.resx">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmSettings.resx" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmSettings.resx">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmSyncTime.resx" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmSyncTime.resx">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmSystem.resx" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmSystem.resx">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmTransactLost.resx" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmTransactLost.resx">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmVehicle.resx" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmVehicle.resx">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Forms\frmLogo.resx" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Forms\frmLogo.resx">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="My Project\Resources.resx" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\My Project\Resources.resx">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Reports\CRBydate.rpt" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Reports\CRBydate.rpt">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Reports\CRByOp.rpt" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Reports\CRByOp.rpt">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Reports\CRBySt.rpt" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Reports\CRBySt.rpt">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="Reports\CRByVh.rpt" Description="File successfully backed up as D:\PROGRAMS\VB\VB 8\BTTC\PMS\ParkingPOS\Backup\Reports\CRByVh.rpt">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="ParkingPOS.vbproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="ParkingPOS" Source="ParkingPOS.vbproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="ParkingPOS" Source="ParkingPOS.vbproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>
