@@ -1,0 +1,694 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{72D6AD89-C341-4287-BCB4-B4A1FCA75736}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>CashLessPOS.My.MyApplication</StartupObject>
+    <RootNamespace>CashLessPOS</RootNamespace>
+    <AssemblyName>Parking Revenue System</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <ApplicationIcon>parking.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Parking Revenue System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Parking Revenue System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="adodb, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\adodb.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\frmAddCharging.Designer.vb">
+      <DependentUpon>frmAddCharging.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmAddCharging.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAddDiscount.Designer.vb">
+      <DependentUpon>frmAddDiscount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmAddDiscount.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmBussDate.Designer.vb">
+      <DependentUpon>frmBussDate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmBussDate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCamSettings.Designer.vb">
+      <DependentUpon>frmCamSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCamSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCashierLogout.Designer.vb">
+      <DependentUpon>frmCashierLogout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCashierLogout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmChargeCateg.Designer.vb">
+      <DependentUpon>frmChargeCateg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmChargeCateg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCharging.Designer.vb">
+      <DependentUpon>frmCharging.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCharging.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCompute.Designer.vb">
+      <DependentUpon>frmCompute.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCompute.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmD8Test.Designer.vb">
+      <DependentUpon>frmD8Test.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmD8Test.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDiscount.Designer.vb">
+      <DependentUpon>frmDiscount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDiscount.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmFindLostCard.Designer.vb">
+      <DependentUpon>frmFindLostCard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmFindLostCard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmFlatRate.Designer.vb">
+      <DependentUpon>frmFlatRate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmFlatRate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmGenCateg.Designer.vb">
+      <DependentUpon>frmGenCateg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmGenCateg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmHourly.Designer.vb">
+      <DependentUpon>frmHourly.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmHourly.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmLostCard.Designer.vb">
+      <DependentUpon>frmLostCard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmLostCard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmManualLost.Designer.vb">
+      <DependentUpon>frmManualLost.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmManualLost.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmManualTR.Designer.vb">
+      <DependentUpon>frmManualTR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmManualTR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmOR.Designer.vb">
+      <DependentUpon>frmOR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmOR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmOVcompute.Designer.vb">
+      <DependentUpon>frmOVcompute.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmOVcompute.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmOvernigth.Designer.vb">
+      <DependentUpon>frmOvernigth.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmOvernigth.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPrevPrint.Designer.vb">
+      <DependentUpon>frmPrevPrint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPrevPrint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmTender.Designer.vb">
+      <DependentUpon>frmTender.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmTender.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmTenderChange.Designer.vb">
+      <DependentUpon>frmTenderChange.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmTenderChange.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmTransact.Designer.vb">
+      <DependentUpon>frmTransact.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmTransact.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAcc.Designer.vb">
+      <DependentUpon>frmAcc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmAcc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAddAcc.Designer.vb">
+      <DependentUpon>frmAddAcc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmAddAcc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmConnDB.Designer.vb">
+      <DependentUpon>frmConnDB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmConnDB.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmLogin.Designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPoleDisplay.Designer.vb">
+      <DependentUpon>frmPoleDisplay.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPoleDisplay.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSetPOS.Designer.vb">
+      <DependentUpon>frmSetPOS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSetPOS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSetPrinter.Designer.vb">
+      <DependentUpon>frmSetPrinter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSetPrinter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmBarrier.Designer.vb">
+      <DependentUpon>frmBarrier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmBarrier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmReportDT.Designer.vb">
+      <DependentUpon>frmReportDT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmReportDT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSettings.Designer.vb">
+      <DependentUpon>frmSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSyncTime.Designer.vb">
+      <DependentUpon>frmSyncTime.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSyncTime.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSystem.Designer.vb">
+      <DependentUpon>frmSystem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSystem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmTransactLost.Designer.vb">
+      <DependentUpon>frmTransactLost.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmTransactLost.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmVAtSettings.Designer.vb">
+      <DependentUpon>frmVAtSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmVAtSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmVehicle.Designer.vb">
+      <DependentUpon>frmVehicle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmVehicle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmLogo.Designer.vb">
+      <DependentUpon>frmLogo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmLogo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmZreport.Designer.vb">
+      <DependentUpon>frmZreport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmZreport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\LOGO_FUNCTION.vb" />
+    <Compile Include="Modules\AddPic.vb" />
+    <Compile Include="Modules\CamSettings.vb" />
+    <Compile Include="Modules\Charging Rules.vb" />
+    <Compile Include="Modules\CHARGING_FUNCTION.vb" />
+    <Compile Include="Modules\D8.vb" />
+    <Compile Include="Modules\D8Offline.vb" />
+    <Compile Include="Modules\D8Write.vb" />
+    <Compile Include="Modules\HEX to String.vb" />
+    <Compile Include="Modules\IO Relay.vb" />
+    <Compile Include="Modules\Controls.vb" />
+    <Compile Include="Modules\DBconn.vb" />
+    <Compile Include="Modules\Log_Out_Print.vb" />
+    <Compile Include="Modules\MainCtrl.vb" />
+    <Compile Include="Modules\D8Online.vb" />
+    <Compile Include="Modules\MAIN_SECURITY.vb" />
+    <Compile Include="Modules\OR_NO_FUNCTION.vb" />
+    <Compile Include="Modules\PingConfig.vb" />
+    <Compile Include="Modules\PoleDisplay.vb" />
+    <Compile Include="Modules\PrinterDriver.vb" />
+    <Compile Include="Modules\PrintReceipt.vb" />
+    <Compile Include="Modules\ReaderConn.vb" />
+    <Compile Include="Modules\ServerTime.vb" />
+    <Compile Include="Modules\TimeComputation.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Reports\CRBydate.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRBydate.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\CRByOp.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRByOp.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\CRBySt.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRBySt.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\CRByVh.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRByVh.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\frmAddCharging.resx">
+      <DependentUpon>frmAddCharging.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAddDiscount.resx">
+      <DependentUpon>frmAddDiscount.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmBussDate.resx">
+      <DependentUpon>frmBussDate.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCamSettings.resx">
+      <DependentUpon>frmCamSettings.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCashierLogout.resx">
+      <DependentUpon>frmCashierLogout.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmChargeCateg.resx">
+      <DependentUpon>frmChargeCateg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCharging.resx">
+      <DependentUpon>frmCharging.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCompute.resx">
+      <DependentUpon>frmCompute.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmD8Test.resx">
+      <DependentUpon>frmD8Test.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmDiscount.resx">
+      <DependentUpon>frmDiscount.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmFindLostCard.resx">
+      <DependentUpon>frmFindLostCard.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmFlatRate.resx">
+      <DependentUpon>frmFlatRate.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmGenCateg.resx">
+      <DependentUpon>frmGenCateg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmHourly.resx">
+      <DependentUpon>frmHourly.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmLostCard.resx">
+      <DependentUpon>frmLostCard.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmManualLost.resx">
+      <DependentUpon>frmManualLost.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmManualTR.resx">
+      <DependentUpon>frmManualTR.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmOR.resx">
+      <DependentUpon>frmOR.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmOVcompute.resx">
+      <DependentUpon>frmOVcompute.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmOvernigth.resx">
+      <DependentUpon>frmOvernigth.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPrevPrint.resx">
+      <DependentUpon>frmPrevPrint.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmTender.resx">
+      <DependentUpon>frmTender.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmTenderChange.resx">
+      <DependentUpon>frmTenderChange.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmTransact.resx">
+      <DependentUpon>frmTransact.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAcc.resx">
+      <DependentUpon>frmAcc.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAddAcc.resx">
+      <DependentUpon>frmAddAcc.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmConnDB.resx">
+      <DependentUpon>frmConnDB.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPoleDisplay.resx">
+      <DependentUpon>frmPoleDisplay.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSetPOS.resx">
+      <DependentUpon>frmSetPOS.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSetPrinter.resx">
+      <DependentUpon>frmSetPrinter.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmBarrier.resx">
+      <DependentUpon>frmBarrier.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmReportDT.resx">
+      <DependentUpon>frmReportDT.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSettings.resx">
+      <DependentUpon>frmSettings.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSyncTime.resx">
+      <DependentUpon>frmSyncTime.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSystem.resx">
+      <DependentUpon>frmSystem.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmTransactLost.resx">
+      <DependentUpon>frmTransactLost.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmVAtSettings.resx">
+      <DependentUpon>frmVAtSettings.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmVehicle.resx">
+      <DependentUpon>frmVehicle.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmLogo.resx">
+      <DependentUpon>frmLogo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmZreport.resx">
+      <DependentUpon>frmZreport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CRBydate.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRBydate.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CRByOp.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRByOp.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CRBySt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRBySt.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CRByVh.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRByVh.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxMSCommLib">
+      <Guid>{648A5603-2C6E-101B-82B6-000000000014}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="AxNETVIDEOACTIVEXLib">
+      <Guid>{36EB3364-7668-47E2-9577-8740D9784062}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="COMRD800Lib">
+      <Guid>{50DEC628-228A-4AB7-A057-1247676BCA10}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="MSCommLib">
+      <Guid>{648A5603-2C6E-101B-82B6-000000000014}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="NETVIDEOACTIVEXLib">
+      <Guid>{36EB3364-7668-47E2-9577-8740D9784062}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="parking.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
