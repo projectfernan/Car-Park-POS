@@ -1,0 +1,212 @@
+﻿Imports ADODB
+Public Class frmCharging
+    Public id As String
+
+    Sub header()
+        lstList.Columns.Add("Vehicle Type", 300, HorizontalAlignment.Left)
+        lstList.Columns.Add("Grace Period", 150, HorizontalAlignment.Left)
+        lstList.Columns.Add("Minimum Mins.", 150, HorizontalAlignment.Left)
+        lstList.Columns.Add("First Amount", 150, HorizontalAlignment.Left)
+        lstList.Columns.Add("SucceedingAmt", 150, HorizontalAlignment.Left)
+        lstList.Columns.Add("FlatRate", 150, HorizontalAlignment.Left)
+        lstList.Columns.Add("LostCard", 150, HorizontalAlignment.Left)
+        lstList.Columns.Add("ChargeType", 150, HorizontalAlignment.Left)
+        lstList.Columns.Add("Key", 150, HorizontalAlignment.Left)
+    End Sub
+
+    Sub fillL()
+        Try
+            If conLocal() = False Then Exit Sub
+
+            Dim rs As New Recordset
+            Dim lup As Short
+            rs = New Recordset
+            rs = conSqlLoc.Execute("select * from tblCharge")
+            txtCnt.Text = rs.RecordCount
+            If rs.EOF = False Then
+                For lup = 1 To rs.RecordCount
+                    lstList.Refresh()
+                    Dim viewlst As New ListViewItem
+                    viewlst = lstList.Items.Add(rs("VehicleType").Value, lup)
+                    viewlst.SubItems.Add(rs("GracePeriod").Value)
+                    viewlst.SubItems.Add(rs("MinMinutes").Value)
+                    viewlst.SubItems.Add(MakeMoney(rs("MinAmount").Value))
+                    viewlst.SubItems.Add(MakeMoney(rs("IntAmount").Value))
+                    viewlst.SubItems.Add(MakeMoney(rs("FlatRate").Value))
+                    viewlst.SubItems.Add(MakeMoney(rs("LostCard").Value))
+                    viewlst.SubItems.Add(rs("ChargeType").Value)
+                    viewlst.SubItems.Add(rs("KeyCode").Value)
+                    rs.MoveNext()
+                Next
+            End If
+        Catch ex As Exception
+            Save_ErrLogs("[fillL] frmCharging", ex.Message)
+        End Try
+    End Sub
+
+    Sub FindL()
+        Try
+            If conLocal() = False Then Exit Sub
+
+            Dim rs As New Recordset
+            Dim lup As Short
+            rs = New Recordset
+            rs = conSqlLoc.Execute("select * from tblCharge where " & cboCateg.Text & " like '%" & txtKeyword.Text & "%'")
+            txtCnt.Text = rs.RecordCount
+            If rs.EOF = False Then
+                For lup = 1 To rs.RecordCount
+                    lstList.Refresh()
+                    Dim viewlst As New ListViewItem
+                    viewlst = lstList.Items.Add(rs("VehicleType").Value, lup)
+                    viewlst.SubItems.Add(rs("GracePeriod").Value)
+                    viewlst.SubItems.Add(rs("MinMinutes").Value)
+                    viewlst.SubItems.Add(MakeMoney(rs("MinAmount").Value))
+                    viewlst.SubItems.Add(MakeMoney(rs("IntAmount").Value))
+                    viewlst.SubItems.Add(MakeMoney(rs("FlatRate").Value))
+                    viewlst.SubItems.Add(MakeMoney(rs("LostCard").Value))
+                    viewlst.SubItems.Add(rs("ChargeType").Value)
+                    viewlst.SubItems.Add(rs("KeyCode").Value)
+                    rs.MoveNext()
+                Next
+            End If
+        Catch ex As Exception
+            Save_ErrLogs("[findL] frmCharging", ex.Message)
+        End Try
+    End Sub
+
+    Sub edt(ByRef id As String)
+        Try
+            If conLocal() = False Then Exit Sub
+
+            Dim rs As New Recordset
+            rs = New Recordset
+            rs = conSqlLoc.Execute("select * from tblCharge where VehicleType = '" & id & "'")
+            If rs.EOF = False Then
+                With frmAddCharging
+                    addChargeId = rs("VehicleType").Value()
+                    .txtVtype.Text = rs("VehicleType").Value()
+                    .txtGPeriod.Text = rs("GracePeriod").Value
+                    .txtMinMinutes.Text = rs("MinMinutes").Value
+                    .txtAmount.Text = rs("MinAmount").Value
+                    .txtIntAmount.Text = rs("IntAmount").Value
+                    .txtFlatRate.Text = rs("FlatRate").Value
+                    .txtLostCard.Text = rs("LostCard").Value
+                    .cboChargeType.Text = rs("ChargeType").Value
+                    .cboKey.Text = rs("KeyCode").Value
+                End With
+            End If
+        Catch ex As Exception
+            Save_ErrLogs("[edt] frmCharging", ex.Message)
+        End Try
+    End Sub
+
+    Sub del2()
+
+        Try
+            If conLocal() = False Then Exit Sub
+
+            Dim rs As New Recordset
+            rs = New Recordset
+            rs = conSqlLoc.Execute("delete from tblCharge where VehicleType = '" & id & "'")
+        Catch ex As Exception
+            Save_ErrLogs("[del2] frmCharging", ex.Message)
+            MsgBox(ex.Message, MsgBoxStyle.Critical, "Delete")
+        End Try
+    End Sub
+
+    Sub clr()
+        With frmAddCharging
+            .txtVtype.Text = vbNullString
+            .txtGPeriod.Value = 0
+            .txtMinMinutes.Value = 0
+            .txtAmount.Value = 0.0
+            .txtIntAmount.Value = 0.0
+            .txtFlatRate.Value = 0.0
+            .txtLostCard.Value = 0.0
+        End With
+    End Sub
+
+    Sub slct()
+        Dim viewlst As New ListViewItem
+        For Each viewlst In lstList.Items
+            If viewlst.Selected = True Then
+                id = viewlst.SubItems(0).Text
+            End If
+        Next
+    End Sub
+
+    Private Sub frmCharging_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        lstList.Clear()
+        header()
+        fillL()
+
+        cmdDel.Enabled = False
+        cmdEdit.Enabled = False
+    End Sub
+
+    Private Sub ToolStripButton3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ToolStripButton3.Click
+        frmAddCharging.lblTitle.Text = "     New Charging Rule"
+        frmAddCharging.txtVtype.Focus()
+        clr()
+        frmAddCharging.ShowDialog()
+    End Sub
+
+    Private Sub ToolStripButton2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ToolStripButton2.Click
+        lstList.Clear()
+        header()
+        If conLocal() = True Then
+            fillL()
+        End If
+    End Sub
+
+    Private Sub ToolStripButton4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdEdit.Click
+        frmAddCharging.lblTitle.Text = "     Update Charging Rule"
+        edt(id)
+        frmAddCharging.txtVtype.Focus()
+        frmAddCharging.ShowDialog()
+    End Sub
+
+    Private Sub lstList_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lstList.SelectedIndexChanged
+        slct()
+        cmdDel.Enabled = True
+        cmdEdit.Enabled = True
+    End Sub
+
+    Private Sub ToolStripButton5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdDel.Click
+        If MsgBox("Are you sure do you want to delete this account?    ", MsgBoxStyle.Question + MsgBoxStyle.YesNo + MsgBoxStyle.DefaultButton2, "Delete") = MsgBoxResult.Yes Then
+            If conLocal() = True Then
+                del2()
+                lstList.Clear()
+                header()
+                fillL()
+            End If
+        End If
+    End Sub
+
+    Private Sub ToolStripComboBox1_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles cboCateg.KeyPress
+        If Asc(e.KeyChar) > 1 Then
+            e.KeyChar = vbNullString
+            cboCateg.Focus()
+        End If
+    End Sub
+
+    Private Sub cmdSearch_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdSearch.Click
+        lstList.Clear()
+        header()
+        FindL()
+    End Sub
+
+    Private Sub txtKeyword_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles txtKeyword.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            cmdSearch_Click(sender, New System.EventArgs)
+        End If
+    End Sub
+
+    Private Sub ToolStripButton1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ToolStripButton1.Click
+        frmCompute.ShowDialog()
+    End Sub
+
+    Private Sub btnClose_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnClose.Click
+        Me.Close()
+    End Sub
+End Class
